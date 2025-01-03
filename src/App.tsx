@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import Dashboard from './pages/Dashboard';
 import Customers from './pages/Customers';
+import Vehicles from './pages/Vehicles';
 import Products from './pages/Products';
 import Services from './pages/Services';
 import Professionals from './pages/Professionals';
@@ -15,6 +16,7 @@ import CashFlow from './pages/CashFlow';
 import Invoices from './pages/Invoices';
 import Tutorials from './pages/Tutorials';
 import Alerts from './pages/Alerts';
+import Budget from './pages/Budget';
 
 function App() {
   return (
@@ -24,10 +26,12 @@ function App() {
           <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="customers" element={<Customers />} />
+          <Route path="vehicles" element={<Vehicles />} />
           <Route path="products" element={<Products />} />
           <Route path="services" element={<Services />} />
           <Route path="professionals" element={<Professionals />} />
           <Route path="work-orders" element={<WorkOrders />} />
+          <Route path="budget" element={<Budget />} />
           <Route path="sales" element={<Sales />} />
           <Route path="purchases" element={<Purchases />} />
           <Route path="payables" element={<Payables />} />
